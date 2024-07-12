@@ -40,7 +40,7 @@ function Testimonials() {
         }
     ]
     return (
-    <div className='testimonial-wrapper'>
+    <div className='testimonial-wrapper' id='Testimonials'>
         <div className='testimonial-heading'>
             <span>Clients always get </span>
             <span>Exceptional Work </span>
@@ -52,6 +52,7 @@ function Testimonials() {
 modules={[Pagination]}
 slidesPerView={1}
 pagination={{clickable:true}}
+grabCursor={true}
 >
         {clients.map((client,i)=><SwiperSlide key={i}>
             <div className='testimonial'>
